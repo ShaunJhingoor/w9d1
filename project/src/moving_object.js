@@ -14,6 +14,12 @@ class MovingObject{
         this.ctx.fill()
         this.ctx.restore()
     }
+
+    move(){
+        this.pos[0] += this.vel[0]
+        this.pos[1] += this.vel[1]
+        
+    }
 }
 
-  module.exports = MovingObject
+module.exports = MovingObject
